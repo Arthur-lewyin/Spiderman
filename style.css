@@ -1,0 +1,58 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 35px;
+    font-family: sans-serif;
+}
+
+.info {
+    display:grid;
+    place-items: center;
+    background-color: #ffea2b;
+    height: 100vh;
+}
+
+.text {
+    font-size: 1.5rem;
+    /* 1rem =16px*/
+}
+
+#size{
+    color: black;
+}
+
+:root {
+    --Mob: #821ffa ;
+    --Tab: #ff9748;
+    --Laptop:#e096e2;
+    --Desk: #000000;
+}
+
+@media screen and (min-width:576px) {
+    .info{
+        background-color:var(--Mob);
+    }
+}
+
+@media screen and (min-width:768px) {
+    .info{
+        background-color: var(--Tab);
+    }
+}
+
+@media screen and (min-width:992px) {
+    .info{
+        background-color: var(--Laptop);
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .info{
+        background-color: var(--Desk);
+        color: white;
+    }
+}
